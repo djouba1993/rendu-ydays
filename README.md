@@ -96,11 +96,6 @@ resource "aws_launch_configuration" "pole_devops" {
 ### variables.tf
 Ici on définisse nos variables en indiquant un nom, un type et une valeur qui sont appelées dans les ressources terraform que j'ai utilisées ci-dessus.
 ```
-variable "env" {
-  type    = string
-  default = "preprod"
-}
-
 variable "project_name" {
   type    = string
   default = "ynov"
