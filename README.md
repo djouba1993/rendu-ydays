@@ -25,6 +25,7 @@ terraform {
 ### main.tf
 La partie rassemble toute la partie configuration concernant la ressource aws_autoscaling_group qui est attaché à  mon lauch_configuration et à mon load balancer.
 j'ai attaché mon lauch configuration à un block_device pour faire de la persistance de données en cas de perte de l'instance.
+Pour les subnets j'ai déclaré les id au niveau des variables. Ceux sont des subnet par défault que j'ai recupéré dans le vpc default de la region eu-west-1
 ```
 resource "aws_autoscaling_group" "pole_devops_asg" {
   lifecycle {
