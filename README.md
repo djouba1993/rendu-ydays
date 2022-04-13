@@ -1,8 +1,7 @@
 # Rendu Ydays Second Semestre 
 
 ## Contexte
-En vue de la préparation de ma certification AWS Solution Architecte Associate, j’ai travaillé sur ce projet de déployer d’infrastructure sur le cloud aws pour monter en compètence sur les services aws. De ce fait je suis parti sur du terraform pour pouvoir automatiser mon déploiement d’infrastructure. 
-Pour ce faire j'ai utilisé des roles terraform.
+En vue de la préparation de ma certification AWS Solution Architecte Associate, j’ai travaillé sur ce projet de déployer d’infrastructure sur le cloud aws pour monter en compètence sur les services aws. De ce fait je suis parti sur du terraform pour pouvoir automatiser mon déploiement d’infrastructure.
 
 ### config.tf
 Dans ce fichier j'ai mis toute la partie configuration le provider sur le quel je veux déployer mon infrastructure à savoir aws, j'ai défini la région et un backend s3 pour stocker mon fichier tfstate à distance et j'ai précisé la version de terraform à utiliser.
@@ -94,7 +93,7 @@ resource "aws_launch_configuration" "pole_devops" {
 }
 ```
 ### variables.tf
-Ici on définisse nos variables en indiquant un nom, un type et une valeur qui sont appelées dans les ressources terraform que j'ai utilisées ci-dessus.
+Ici j'ai défini mes variables en indiquant un nom, un type et une valeur qui sont appelées dans les ressources terraform que j'ai utilisées ci-dessus.
 ```
 variable "project_name" {
   type    = string
