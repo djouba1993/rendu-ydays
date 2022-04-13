@@ -71,8 +71,7 @@ resource "aws_elb" "pole_devops_elb" {
     target              = "TCP:61616"
     timeout             = 5
   }
-
-  tags = local.default_tags
+  
 }
 
 resource "aws_launch_configuration" "pole_devops" {
