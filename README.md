@@ -5,7 +5,7 @@ En vue de la préparation de ma certification AWS Solution Architecte Associate,
 Pour ce faire j'ai utilisé des roles terraform.
 
 ### config.tf
-Dans ce fichier j'ai mis toute la partie configuration le provider sur le quel je veux déployer mon infrastructure à savoir aws, j'ai défini la région et un backend s3 pour stocker mon fichier tfstate à distance.
+Dans ce fichier j'ai mis toute la partie configuration le provider sur le quel je veux déployer mon infrastructure à savoir aws, j'ai défini la région et un backend s3 pour stocker mon fichier tfstate à distance et j'ai précisé la version de terraform à utiliser.
 ```
 provider "aws" {
   region = "eu-west-1"
